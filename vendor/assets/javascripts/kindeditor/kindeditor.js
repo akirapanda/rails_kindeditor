@@ -5,7 +5,7 @@
 * @author Roddy <luolonghao@gmail.com>
 * @website http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
-* @version 4.1.10 (2013-11-23)
+* @version 4.1.10 (2013-12-23)
 *******************************************************************************/
 (function (window, undefined) {
 	if (window.KindEditor) {
@@ -264,8 +264,8 @@ K.options = {
 		'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
 		'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
 		'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
-		'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
-		'anchor', 'link', 'unlink', '|', 'about'
+		'flash', 'audio', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
+		'anchor', 'link', 'unlink', '|'
 	],
 	noDisableItems : ['source', 'fullscreen'],
 	colorTable : [
@@ -5687,6 +5687,7 @@ _plugin('core', function(K) {
 			body : html
 		});
 	});
+	
 	self.plugin.getSelectedLink = function() {
 		return self.cmd.commonAncestor('a');
 	};
