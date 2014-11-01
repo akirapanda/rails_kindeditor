@@ -31,6 +31,10 @@ KindEditor.plugin('audio', function(K) {
 							}
 						}
 					}),
+					div = dialog.div,
+					urlBox = K('input[name="url"]', div),
+					typeBox = K('select[name="type"]', div);
+			      	urlBox.val('http://');
 			},
 			'delete' : function() {
 				self.plugin.getSelectedMedia().remove();
